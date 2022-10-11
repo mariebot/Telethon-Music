@@ -15,7 +15,7 @@ PM_START_TEXT = """
 """
 
 @Zaid.on(events.NewMessage(pattern="^[?!/]startt$"))
-async def start(event):
+async def startt(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
     if event.is_private:
