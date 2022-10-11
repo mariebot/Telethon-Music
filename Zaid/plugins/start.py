@@ -14,7 +14,7 @@ PM_START_TEXT = """
 ✘ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ 🔘 ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ℹ️**.
 """
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]start$"))
+@Zaid.on(events.NewMessage(pattern="^[?!/]startt$"))
 async def start(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
@@ -35,7 +35,7 @@ async def start(event):
 
 
 
-@Zaid.on(events.callbackquery.CallbackQuery(data="start"))
+@Zaid.on(events.callbackquery.CallbackQuery(data="startt"))
 async def _(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
